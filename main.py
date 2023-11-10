@@ -87,13 +87,13 @@ class Calendar(QWidget):
         date = self.get_current_data()
         season = date[3:5]
         if season in ['01', '02', '12']:
-            self.pixmap = QPixmap('image_jpg/winter.jpg')  
+            self.pixmap = QPixmap('winter.jpg')  
         elif season in ['03', '04', '05']:
-            self.pixmap = QPixmap('image_jpg/spring.jpg')  
+            self.pixmap = QPixmap('spring.jpg')  
         elif season in ['06', '07', '08']:
-            self.pixmap = QPixmap('image_jpg/summer.jpg')  
+            self.pixmap = QPixmap('summer.jpg')  
         elif season in ['09', '10', '11']:
-            self.pixmap = QPixmap('image_jpg/autumn.jpg')  
+            self.pixmap = QPixmap('autumn.jpg')  
         self.image.setPixmap(self.pixmap)
 
     # Вспомогательная функция для функции was_colored
