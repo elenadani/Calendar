@@ -87,13 +87,13 @@ class Calendar(QWidget):
         date = self.get_current_data()
         season = date[3:5]
         if season in ['01', '02', '12']:
-            self.pixmap = QPixmap('image_jpg/winter.jpg')  # https://f.vividscreen.info/soft/9f81789510a62604dfe6d2de011b12ed/Winter-Train-Ride-wide-i.jpg
+            self.pixmap = QPixmap('image_jpg/winter.jpg')  
         elif season in ['03', '04', '05']:
-            self.pixmap = QPixmap('image_jpg/spring.jpg')  # https://ru.vividscreen.info/pic/in-mountains/648/
+            self.pixmap = QPixmap('image_jpg/spring.jpg')  
         elif season in ['06', '07', '08']:
-            self.pixmap = QPixmap('image_jpg/summer.jpg')  # https://ru.vividscreen.info/pic/nice-scenery/2919/
+            self.pixmap = QPixmap('image_jpg/summer.jpg')  
         elif season in ['09', '10', '11']:
-            self.pixmap = QPixmap('image_jpg/autumn.jpg')  # https://ru.vividscreen.info/pic/autumn-morning/27929/
+            self.pixmap = QPixmap('image_jpg/autumn.jpg')  
         self.image.setPixmap(self.pixmap)
 
     # Вспомогательная функция для функции was_colored
